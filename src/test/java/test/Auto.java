@@ -10,7 +10,13 @@ public class Auto {
 	static int cantidadCreados;
 
 	int cantidadAsientos(){
-		return this.asientos.length;
+		int totalasientos=0;
+		for(Asiento e: asientos) {
+			if(e!=null) {
+				totalasientos++;
+			}
+		}
+		return totalasientos;
 	}
 	String verificarIntegridad() {
 		String Result = null;
