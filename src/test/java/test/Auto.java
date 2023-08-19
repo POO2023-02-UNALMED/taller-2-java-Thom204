@@ -9,10 +9,10 @@ public class Auto {
 	int registro;
 	static int cantidadCreados;
 
-	int CantidadAsientos(){
+	int cantidadAsientos(){
 		return this.asientos.length;
 	}
-	String VerificarIntegridad() {
+	String verificarIntegridad() {
 		String Result = null;
 		for (Asiento i: asientos) {
 			if (!(this.registro== motor.registro && this.registro==i.registro)) {
